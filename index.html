@@ -36,15 +36,29 @@
         line-height: 22px;
       }
       .content {
-        margin-top: 72px;
+        margin-top: 78px;
+        opacity: 0;
+        -webkit-transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -moz-transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -ms-transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -o-transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      .content.appear {
+        margin-top: 72px !important;
+        opacity: 1 !important;
       }
       .content .content_yearbox {
         margin-top: 48px;
+        display: none;
       }
+      .content .content_yearbox.appear {
+        display: block;
+      }
+
       .content .content_yearbox .header {
         width: 996px;
         margin: 0 auto;
-
       }
       .content .year {
         font-size: 48px;
@@ -173,7 +187,8 @@
               startDelay: 30,
               typeSpeed: 30,
               backSpeed: 15,
-              showCursor: false
+              showCursor: false,
+              onComplete: (self) => content_visible()
             }
 
             var typed = new Typed("#bio_typed", options);
@@ -205,7 +220,7 @@
                 Arfs
               </div>
               <div class="desc">
-                아티스트가 만든 레이어 필터를 컨셉으로 담은 필터앱 시리즈.<br><a target="_blank" href="http://arfs.co">[사이트 바로가기]</a>
+                (WIP) 아티스트가 만든 레이어 필터를 컨셉으로 담은 필터앱 시리즈.<br><a target="_blank" href="http://arfs.co">[사이트 바로가기]</a>
               </div>
               <div class="footer">
                 <div class="start">
@@ -378,6 +393,14 @@
             auto_margin();
           }
           window.onresize = resize;
+        </script>
+        <script type="text/javascript">
+          function content_visible() {
+            document.getElementsByClassName('content')[0].classList.add('appear');
+            for (i=0; i < document.getElementsByClassName('content_yearbox').length; i++) {
+              document.getElementsByClassName('content_yearbox')[i].classList.add('appear');
+            }
+          }
         </script>
       </div>
     </div>
