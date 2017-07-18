@@ -3,10 +3,307 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="dragscroll.js"></script>
+    <script src="typed.js"></script>
+    <link href=' http://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+    <style media="screen">
+      @font-face {
+        font-family: "big caslon";
+        src: url(./assets/Big Caslon Medium.ttf) format("truetype");
+      }
+      body {
+        margin-bottom: 48px;
+        overflow-x: hidden;
+        width: 100%;
+      }
+
+      .info {
+        width: 996px;
+        margin: 0 auto;
+        margin-top: 208px;
+        font-family: "big caslon";
+        color: #808080;
+      }
+      .info .onlymytho {
+        font-size: 36px;
+        color: #808080;
+
+      }
+      .info .bio {
+        font-size: 16px;
+        margin-top: 48px;
+        min-height: 19px;
+        line-height: 22px;
+      }
+      .content {
+        margin-top: 72px;
+      }
+      .content .content_yearbox {
+        margin-top: 48px;
+      }
+      .content .content_yearbox .header {
+        width: 996px;
+        margin: 0 auto;
+
+      }
+      .content .year {
+        font-size: 48px;
+        font-family: "big caslon";
+        color: #808080;
+        display: inline-block;
+      }
+      .content .timeline {
+        width: 860px;
+        height: 2px;
+        float: right;
+        border-radius: 10px;
+        margin-top: 40px;
+        background-color: #ccd4d9;
+        display: inline-block;
+      }
+      .content .content_carousel {
+        margin: 0 auto;
+        padding-top: 48px;
+        padding-bottom: 48px;
+        overflow-x: scroll;
+        white-space: nowrap;
+        height: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .content .content_carousel::-webkit-scrollbar {
+        display: none;
+      }
+      .content .content_carousel .content_curtain {
+        z-index: 100;
+        opacity: 0.9;
+        width: 100px;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        background: white; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left,rgba(255,255,255,0),rgba(255,255,255,1)); /*Safari 5.1-6*/
+        background: -o-linear-gradient(right,rgba(255,255,255,0),rgba(255,255,255,1)); /*Opera 11.1-12*/
+        background: -moz-linear-gradient(right,rgba(255,255,255,0),rgba(255,255,255,1)); /*Fx 3.6-15*/
+        background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)); /*Standard*/
+      }
+      .content .content_carousel .content_item {
+        width: 344px;
+        height: 572px;
+        box-shadow: #CCD4D9 0 10px 30px;
+        border: 1px solid #f7f9fa;
+        border-radius: 8px;
+        margin-right: 48px;
+        display: inline-block;
+        vertical-align: top;
+        cursor: pointer;
+        transition: all .3s ease;
+      }
+      .content .content_carousel .content_item:hover {
+        margin-top:-5px;
+        box-shadow: 0px 10px 30px #aeb8bd;
+      }
+      .content .content_carousel .content_item .image {
+        width: 100%;
+        height: 288px;
+        background-color: #f7f9fa;
+        border-radius: 8px 8px 0 0;
+        z-index:0;
+        overflow: hidden;
+      }
+      .content .content_carousel .content_item .image img {
+        overflow: hidden;
+        width: 100%;
+      }
+      .content .content_carousel .content_item .text_wrapper {
+        margin: 28px;
+        z-index:100;
+      }
+      .content .content_carousel .content_item .title {
+        font-size: 28px;
+        color: #59646A;
+        font-family: "Bodoni 72"
+      }
+      .content .content_carousel .content_item .desc {
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        white-space: normal;
+        color: #aeb8bd;
+        width: 100%;
+        height: 126px;
+      }
+      .content .content_carousel .content_item .footer {
+        bottom: 0;
+        font-size: 16px;
+        font-family: 'Bodoni 72';
+        color: #aeb8bd;
+        width: auto;
+        height: auto;
+        margin-top: 28px;
+      }
+      .content .content_carousel .content_item .footer .start {
+        display: inline-block;
+      }
+      .content .content_carousel .content_item .footer .percent {
+        display: inline-block;
+        margin-left: 18px;
+        vertical-align: top;
+      }
+    </style>
   </head>
   <body>
-    <h1>Welcome to onlymytho</h1>
-    <p>I'm hosted a github page.</p>
-    <p>what a life</p>
+    <div class="info">
+      <div class="onlymytho">
+        onlymytho
+      </div>
+      <div class="bio">
+        <span id='bio_typed'>
+          <script type="text/javascript">
+            var options = {
+              strings: ["", "I'm a product designer.", "I'm a product designer. or a product manager.", "I'm a creator.", "I'm a creator.<br>Enjoy!"],
+              startDelay: 30,
+              typeSpeed: 30,
+              backSpeed: 15,
+              showCursor: false
+            }
+
+            var typed = new Typed("#bio_typed", options);
+          </script>
+        </span>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content_yearbox">
+        <div class="header">
+          <div class="year">
+            2017
+          </div>
+          <div class="timeline">
+
+          </div>
+        </div>
+
+        <div class="content_carousel">
+          <div class="content_curtain">
+
+          </div>
+          <div class="content_item">
+            <div class="image">
+
+            </div>
+            <div class="text_wrapper">
+              <div class="title">
+                Arfs
+              </div>
+              <div class="desc">
+                아티스트가 만든 레이어 필터를 컨셉으로 담은 필터앱 시리즈.
+              </div>
+              <div class="footer">
+                <div class="start">
+                  2017.05
+                </div>
+                <div class="percent">
+                  100%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content_item">
+            <div class="image">
+              <img src="./assets/Group3.svg" alt="">
+            </div>
+            <div class="text_wrapper">
+              <div class="title">
+                Before Airbnb
+              </div>
+              <div class="desc">
+                주변 경쟁자 분석을 통해 에어비엔비를 효과적으로 운영할 수 있도록 해주는 서비스.
+              </div>
+              <div class="footer">
+                <div class="start">
+                  2017.05
+                </div>
+                <div class="percent">
+                  100%
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content_item">
+            <div class="image">
+              <img src="./assets/yeonnam.jpeg" alt="" style="height: 100%">
+            </div>
+            <div class="text_wrapper">
+              <div class="title">
+                연남동 작업실
+              </div>
+              <div class="desc">
+                연남동 골목길 한 켠에 만들어진 작은 작업실.<br>한 번 오면 반하게 되는 아늑한 매력은 반드시 업무를 위한 작업공간만은 아니다.
+              </div>
+              <div class="footer">
+                <div class="start">
+                  2017.05
+                </div>
+                <div class="percent">
+                  100%
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content_yearbox">
+        <div class="header">
+          <div class="year">
+            2016
+          </div>
+          <div class="timeline">
+
+          </div>
+        </div>
+      </div>
+      <div class="content_yearbox">
+        <div class="header">
+          <div class="year">
+            2015
+          </div>
+          <div class="timeline">
+
+          </div>
+        </div>
+      </div>
+      <div class="content_yearbox">
+        <div class="header">
+          <div class="year">
+            2014
+          </div>
+          <div class="timeline">
+
+          </div>
+        </div>
+      </div>
+
+
+
+        <script type="text/javascript">
+          // auto_margin of content_carousel area
+          var element = document.getElementsByClassName('info')[0],
+          style = window.getComputedStyle(element)
+          content_carousels = document.querySelectorAll('.content_carousel');
+          function auto_margin() {
+            for (var i=0; i<content_carousels.length; i++) {
+              content_carousels[i].children[0].style.width = style.getPropertyValue('margin-right');
+              content_carousels[i].children[1].style.marginLeft = style.getPropertyValue('margin-left');
+            }
+          }
+          auto_margin();
+          function resize() {
+            auto_margin();
+          }
+          window.onresize = resize;
+        </script>
+      </div>
+    </div>
   </body>
 </html>
