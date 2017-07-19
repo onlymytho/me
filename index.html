@@ -106,7 +106,7 @@
         box-shadow: #CCD4D9 0 10px 30px;
         border: 1px solid #f7f9fa;
         border-radius: 8px;
-        margin-right: 48px;
+        margin-right: 44px;
         display: inline-block;
         vertical-align: top;
         cursor: pointer;
@@ -184,9 +184,9 @@
           <script type="text/javascript">
             var options = {
               strings: ["", "I'm a product designer.", "I'm a product designer. or a product manager.", "I'm a creator.", "I'm a creator.<br>Enjoy!"],
-              startDelay: 30,
-              typeSpeed: 30,
-              backSpeed: 15,
+              startDelay: 10,
+              typeSpeed: 10,
+              backSpeed: 5,
               showCursor: false,
               onComplete: (self) => content_visible()
             }
@@ -211,7 +211,7 @@
           <div class="content_curtain">
 
           </div>
-          <div class="content_item">
+          <!-- <div class="content_item">
             <div class="image">
 
             </div>
@@ -231,7 +231,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="content_item">
             <div class="image">
               <img src="./assets/before_airbnb.svg" alt="">
@@ -386,6 +386,8 @@
             for (var i=0; i<content_carousels.length; i++) {
               content_carousels[i].children[0].style.width = style.getPropertyValue('margin-right');
               content_carousels[i].children[1].style.marginLeft = style.getPropertyValue('margin-left');
+              var content_count = content_carousels[i].children.length
+              content_carousels[i].children[content_count-1].style.marginRight = style.getPropertyValue('margin-left');
             }
           }
           auto_margin();
