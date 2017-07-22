@@ -1,0 +1,109 @@
+{
+  "data": {
+    "content_item": {
+      "before_airbnb": {
+        "created_at": "2017-07-21 10:16:00",
+        "happened_at": "2017-07-01",
+        "title": "Before Airbnb",
+        "description": "주변 경쟁자 분석을 통해 에어비엔비를 효과적으로 운영할 수 있도록 해주는 서비스",
+        "percent": "100%",
+        "link": [
+          "http://beforeairbnb.com"
+        ],
+        "thumbnail_url": "./assets/before_airbnb.svg",
+        "image_urls": [
+          "./assets/before_airbnb1.png",
+          "b",
+          "c"
+        ],
+        "tags": [
+          "planning",
+          "design",
+          "programming"
+        ]
+      },
+      "jakupsil": {
+        "created_at": "2017-07-23 00:42:00",
+        "happened_at": "2017-03-01",
+        "title": "연남동 작업실",
+        "description": "연남동 골목길 한 켠에 만들어진 작은 작업실. 한 번 오면 반하게 되는 아늑한 매력은 때때로 '작업'에 도움이 된다.",
+        "percent": "33%",
+        "link": [
+        ],
+        "thumbnail_url": "./assets/yeonnam.jpeg",
+        "image_urls": [
+          "",
+          "",
+          ""
+        ],
+        "tags": [
+          "planning",
+          "interior",
+          "offline",
+          "event"
+        ]
+      },
+      "design_sprint_team": {
+        "created_at": "2017-07-23 01:10:00",
+        "happened_at": "2016-04-01",
+        "title": "Design Sprint Team",
+        "description": "빙글 팀원들과 함께 Design Sprint 방식 프로젝트를 주도적으로 진행하여 5일 만에 '문제정의-아이디어-프로토타입-테스트'의 과정을 마쳤다.",
+        "percent": "40%",
+        "link": [
+        ],
+        "thumbnail_url": "./assets/design_sprint.jpg",
+        "image_urls": [
+          "",
+          "",
+          ""
+        ],
+        "tags": [
+          "planning",
+          "project_management",
+          "prototyping",
+          "designsprint",
+          "designthinking"
+        ]
+      },
+      "design_thinking_sessions": {
+        "created_at": "2017-07-23 01:15:00",
+        "happened_at": "2016-04-01",
+        "title": "Design Thinknig Sessions",
+        "description": "빙글 팀원들에게 디자인 사고에 대해 강의하고 여러 실습을 포함한 원데이 워크샵을 2회 진행했다. 대학생을 넘어 실무자를 대상으로 한 첫 DT 강의.",
+        "percent": "100%",
+        "link": [
+        ],
+        "thumbnail_url": "./assets/design_thinking_session.jpg",
+        "image_urls": [
+          "",
+          "",
+          ""
+        ],
+        "tags": [
+          "tutoring",
+          "designthinking"
+        ]
+      },
+      "design_thinking_ft_school": {
+        "created_at": "2017-07-23 01:15:00",
+        "happened_at": "2016-01-01",
+        "title": "Design Thinking FT Schl.",
+        "description": "디자인 사고 중심 프로젝트를 진행하는데 필요한 여러 도구와 프로젝트 진행 방식을 가이드하는 퍼실리테이터로서의 역량을 익혔다. 언제나 느끼지만 DT 스킬은 어디서나 유용하다.",
+        "percent": "33%",
+        "link": [
+          "http://www.slideshare.net/onlymytho/dtft-160228"
+        ],
+        "thumbnail_url": "./assets/dtft.jpg",
+        "image_urls": [
+          "",
+          "",
+          ""
+        ],
+        "tags": [
+          "tutoring",
+          "designthinking"
+        ]
+      }
+    }
+  }
+}
