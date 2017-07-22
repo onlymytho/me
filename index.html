@@ -5,6 +5,7 @@
     <title></title>
     <script src="./js/dragscroll.js"></script>
     <script src="./js/typed.js"></script>
+    <script src="./js/content_functions.js"></script>
     <link href=' https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
     <style media="screen">
       @font-face {
@@ -17,19 +18,19 @@
         width: 100%;
       }
 
-      .info {
+      .profile {
         width: 996px;
         margin: 0 auto;
         margin-top: 208px;
         font-family: "big caslon";
         color: #808080;
       }
-      .info .onlymytho {
+      .profile .onlymytho {
         font-size: 36px;
         color: #808080;
 
       }
-      .info .bio {
+      .profile .bio {
         font-size: 16px;
         margin-top: 48px;
         min-height: 44px;
@@ -172,10 +173,41 @@
         margin-left: 18px;
         vertical-align: top;
       }
+      .show {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.75);
+        overflow: scroll;
+        cursor: zoom-out;
+        height: 0;
+        opacity: 0;
+      }
+      .show .content_show {
+        position: relative;
+        width: 640px;
+        height: 1280px;
+        margin: 84px auto;
+        padding: 28px;
+        border: 1px solid #ccd4d9;
+        border-radius: 8px;
+        background-color: #fff;
+        cursor: default;
+
+        opacity: 0;
+        margin-top: 96px;
+        -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -moz-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -ms-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -o-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
     </style>
   </head>
   <body>
-    <div class="info">
+    <div class="profile">
       <div class="onlymytho">
         onlymytho
       </div>
@@ -197,7 +229,7 @@
       </div>
     </div>
     <div class="content">
-      <div class="content_yearbox">
+      <div class="content_yearbox" id="content_yearbox_2017">
         <div class="header">
           <div class="year">
             2017
@@ -232,179 +264,34 @@
               </div>
             </div>
           </div> -->
-          <div class="content_item">
-            <div class="image">
-              <img src="./assets/before_airbnb.svg" alt="">
-            </div>
-            <div class="text_wrapper">
-              <div class="title">
-                Before Airbnb
-              </div>
-              <div class="desc">
-                주변 경쟁자 분석을 통해 에어비엔비를 효과적으로 운영할 수 있도록 해주는 서비스<br><a target="_blank" href="http://beforeairbnb.com">[사이트 바로가기]</a>
-              </div>
-              <div class="footer">
-                <div class="start">
-                  2017.05
-                </div>
-                <div class="percent">
-                  100%
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="content_item">
-            <div class="image">
-              <img src="./assets/yeonnam.jpeg" alt="" style="height: 100%">
-            </div>
-            <div class="text_wrapper">
-              <div class="title">
-                연남동 작업실
-              </div>
-              <div class="desc">
-                연남동 골목길 한 켠에 만들어진 작은 작업실.<br>한 번 오면 반하게 되는 아늑한 매력은 때때로 '작업'에 도움이 된다.
-              </div>
-              <div class="footer">
-                <div class="start">
-                  2017.03
-                </div>
-                <div class="percent">
-                  100%
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="content_yearbox">
-        <div class="header">
-          <div class="year">
-            2016
-          </div>
-          <div class="timeline">
-
-          </div>
-        </div>
-        <div class="content_carousel">
-          <div class="content_curtain">
-
-          </div>
-          <div class="content_item">
-            <div class="image">
-              <img src="./assets/design_sprint.jpg" alt="" style="height: 100%;">
-            </div>
-            <div class="text_wrapper">
-              <div class="title">
-                Design Sprint Team
-              </div>
-              <div class="desc">
-                빙글 팀원들과 함께 Design Sprint 방식 프로젝트를 주도적으로 진행하여 5일 만에 '문제정의-아이디어-프로토타입-테스트'의 과정을 마쳤다.
-              </div>
-              <div class="footer">
-                <div class="start">
-                  2016.04
-                </div>
-                <div class="percent">
-                  100%
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="content_item">
-            <div class="image">
-              <img src="./assets/design_thinking_session.jpg" alt="" style="height: 100%;">
-            </div>
-            <div class="text_wrapper">
-              <div class="title">
-                Design Thinking Session
-              </div>
-              <div class="desc">
-                빙글 팀원들에게 디자인 사고에 대해 강의하고 여러 실습을 포함한 원데이 워크샵을 2회 진행했다. 대학생을 넘어 실무자를 대상으로 한 첫 DT 강의.
-              </div>
-              <div class="footer">
-                <div class="start">
-                  2016.04
-                </div>
-                <div class="percent">
-                  100%
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="content_item">
-            <div class="image">
-              <img src="./assets/dtft.jpg" alt="" style="height: 100%;">
-            </div>
-            <div class="text_wrapper">
-              <div class="title">
-                Design Thinking FT Schl.
-              </div>
-              <div class="desc">
-                디자인 사고 중심 프로젝트를 진행하는데 필요한 여러 도구와 프로젝트 진행 방식을 가이드하는 퍼실리테이터로서의 역량을 익혔다. 언제나 느끼지만 DT 스킬은 어디서나 유용하다.<br><a target="_blank" href="http://www.slideshare.net/onlymytho/dtft-160228">[프로젝트 자료]</a>
-              </div>
-              <div class="footer">
-                <div class="start">
-                  2016.01
-                </div>
-                <div class="percent">
-                  100%
-                </div>
-              </div>
-            </div>
-          </div>
-
-      </div>
-      <div class="content_yearbox">
-        <div class="header">
-          <div class="year">
-            2015
-          </div>
-          <div class="timeline">
-
-          </div>
-        </div>
-      </div>
-      <div class="content_yearbox">
-        <div class="header">
-          <div class="year">
-            2014
-          </div>
-          <div class="timeline">
-
-          </div>
-        </div>
-      </div>
-
-
-
-        <script type="text/javascript">
-          // auto_margin of content_carousel area
-          var element = document.getElementsByClassName('info')[0],
-          style = window.getComputedStyle(element)
-          content_carousels = document.querySelectorAll('.content_carousel');
-          function auto_margin() {
-            for (var i=0; i<content_carousels.length; i++) {
-              content_carousels[i].children[0].style.width = style.getPropertyValue('margin-right');
-              content_carousels[i].children[1].style.marginLeft = style.getPropertyValue('margin-left');
-              var content_count = content_carousels[i].children.length
-              content_carousels[i].children[content_count-1].style.marginRight = style.getPropertyValue('margin-left');
-            }
-          }
-          auto_margin();
-          function resize() {
-            auto_margin();
-          }
-          window.onresize = resize;
-        </script>
-        <script type="text/javascript">
-          function content_visible() {
-            document.getElementsByClassName('content')[0].classList.add('appear');
-            for (i=0; i < document.getElementsByClassName('content_yearbox').length; i++) {
-              document.getElementsByClassName('content_yearbox')[i].classList.add('appear');
-            }
-          }
-        </script>
       </div>
     </div>
+    <div class="show">
+      <div class="content_show">
+      </div>
+    </div>
+    <script type="text/javascript">
+
+      // Set content_left_margin as dynamically
+      window.onresize = resize;
+      function resize() {
+        auto_margin_left();
+        auto_margin_right();
+      }
+
+      // Call content data from data.json and execute functions about content_item
+      var data;
+      readTextFile("./data.json", function(text){
+          data = JSON.parse(text).data;
+          console.log(data);
+
+          // Call functions related to content data
+          segment_content_item();
+          auto_margin_left();
+          auto_margin_right();
+          apply_content_show_transition();
+      });
+    </script>
   </body>
 </html>
