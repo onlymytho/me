@@ -180,11 +180,47 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: rgba(255, 255, 255, 0.95);
         overflow: scroll;
         cursor: zoom-out;
         height: 0;
         opacity: 0;
+      }
+
+      .show .title {
+        position: relative;
+        width: 800px;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 208px;
+        padding: 0 28px 0 28px;
+        cursor: default;
+        font-size: 36px;
+        color: #808080;
+        font-family: "big caslon";
+        -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -moz-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -ms-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -o-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      .show .desc {
+        position: relative;
+        width: 800px;
+        margin: 0 auto;
+        margin-top: 48px;
+        padding: 0 28px 0 28px;
+        cursor: default;
+        font-size: 16px;
+        line-height: 22px;
+        min-height: 44px;
+        color: #808080;
+        font-family: "big caslon", sans-serif;
+        -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -moz-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -ms-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -o-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
       }
       .show .content_show {
         position: relative;
@@ -205,9 +241,11 @@
         -o-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
         transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
       }
+
       .show .content_show img {
         width: 100%;
       }
+
     </style>
   </head>
   <body>
@@ -236,6 +274,12 @@
 
     </div>
     <div class="show">
+      <div class="title">
+
+      </div>
+      <div class="desc">
+
+      </div>
       <div class="content_show">
       </div>
     </div>

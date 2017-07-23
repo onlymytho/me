@@ -145,13 +145,20 @@ function apply_content_show_transition() {
   document.getElementsByClassName('show')[0].onclick = hide_content_show;
 }
 function show_content_show(content_id) {
+  // Styling content_show
   document.getElementsByClassName('show')[0].style.height = 'auto';
   document.getElementsByClassName('show')[0].style.opacity = '1';
   document.getElementsByClassName('content_show')[0].style.opacity = '1';
-  document.getElementsByClassName('content_show')[0].style.marginTop = '84px';
   document.getElementsByClassName('content_show')[0].style.boxShadow = '#CCD4D9 0 10px 30px';
   document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-  console.log(content_id)
+  document.getElementsByClassName('content_show')[0].style.marginTop = '84px';
+
+  var title_div = document.querySelector(".show .title");
+  title_div.innerText = data.content_item[content_id].title;
+  var desc_div = document.querySelector(".show .desc");
+  desc_div.innerText = data.content_item[content_id].description;
+
+  // Assign content to content_show
   for (image_url in data.content_item[content_id].image_urls) {
     var image_urls = data.content_item[content_id].image_urls
     var content_images = document.createElement("img");
