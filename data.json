@@ -32,7 +32,9 @@
         ],
         "thumbnail_url": "./assets/before_airbnb.svg",
         "image_urls": [
-          "./assets/before_airbnb1.png"
+          "./assets/before_airbnb1.png",
+          "./assets/before_airbnb2.png",
+          "./assets/before_airbnb3.png"
         ],
         "tags": [
           "planning",
@@ -48,11 +50,12 @@
         "percent": "33%",
         "link": [
         ],
-        "thumbnail_url": "./assets/yeonnam.jpeg",
+        "thumbnail_url": "./assets/yeonnam1.jpeg",
         "image_urls": [
-          "",
-          "",
-          ""
+          "./assets/yeonnam1.jpeg",
+          "./assets/yeonnam2.jpg",
+          "./assets/yeonnam3.jpg",
+          "./assets/yeonnam4.gif"
         ],
         "tags": [
           "planning",
