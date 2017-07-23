@@ -32,9 +32,7 @@
         ],
         "thumbnail_url": "./assets/before_airbnb.svg",
         "image_urls": [
-          "./assets/before_airbnb1.png",
-          "b",
-          "c"
+          "./assets/before_airbnb1.png"
         ],
         "tags": [
           "planning",
