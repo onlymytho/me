@@ -32,9 +32,7 @@
         ],
         "thumbnail_url": "./assets/before_airbnb.svg",
         "image_urls": [
-          "./assets/before_airbnb1.png",
-          "./assets/before_airbnb2.png",
-          "./assets/before_airbnb3.png"
+          "./assets/before_airbnb4.jpg"
         ],
         "tags": [
           "planning",
@@ -46,13 +44,14 @@
         "created_at": "2017-07-23 00:42:00",
         "happened_at": "2017-03-01",
         "title": "연남동 작업실",
-        "description": "연남동 골목길 한 켠에 만들어진 작은 작업실. 한 번 오면 반하게 되는 아늑한 매력은 때때로 '작업'에 도움이 된다.",
+        "description": "연남동 골목길 한 켠에 마련한 작은 작업실. 한 번 오면 반하게 되는 아늑한 매력은 때때로 '작업'에 도움이 된다.",
         "percent": "33%",
         "link": [
         ],
         "thumbnail_url": "./assets/yeonnam1.jpeg",
         "image_urls": [
           "./assets/yeonnam1.jpeg",
+          "./assets/yeonnam5.gif",
           "./assets/yeonnam2.jpg",
           "./assets/yeonnam3.jpg",
           "./assets/yeonnam4.gif"
@@ -74,9 +73,13 @@
         ],
         "thumbnail_url": "./assets/design_sprint.jpg",
         "image_urls": [
-          "",
-          "",
-          ""
+          "./assets/design_sprint1.jpg",
+          "./assets/design_sprint2.jpg",
+          "./assets/design_sprint3.jpg",
+          "./assets/design_sprint4.jpg",
+          "./assets/design_sprint5.jpg",
+          "./assets/design_sprint6.jpg",
+          "./assets/design_sprint7.jpg"
         ],
         "tags": [
           "planning",
