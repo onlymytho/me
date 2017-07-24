@@ -149,9 +149,23 @@ function show_content_show(content_id) {
   document.getElementsByClassName('show')[0].style.height = 'auto';
   document.getElementsByClassName('show')[0].style.opacity = '1';
   document.getElementsByClassName('content_show')[0].style.opacity = '1';
-  document.getElementsByClassName('content_show')[0].style.boxShadow = '#CCD4D9 0 10px 30px';
-  document.getElementsByTagName('body')[0].style.overflow = 'hidden';
-  document.getElementsByClassName('content_show')[0].style.marginTop = '84px';
+  if ( window.screen.width < 1024 ) {
+    // Mobile
+    console.log(window.screen.width);
+    document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+    document.getElementsByClassName('content_show')[0].style.marginTop = '48px';
+  }
+  else {
+    // PC
+    console.log(window.screen.width);
+    document.getElementsByClassName('content_show')[0].style.boxShadow = '#CCD4D9 0 10px 30px';
+    document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+    document.getElementsByClassName('content_show')[0].style.marginTop = '84px';
+  }
+
+
+
+
 
   var title_div = document.querySelector(".show .title");
   title_div.innerText = data.content_item[content_id].title;
