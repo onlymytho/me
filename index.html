@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>onlymytho</title>
+    <script src="./js/dragscroll.js"></script>
+    <script src="./js/typed.js"></script>
+    <script src="./js/content_functions.js"></script>
+    <link rel="stylesheet" media='screen and (min-width: 1024px)' href="/css/style.css">
+    <link rel="stylesheet" media='screen and (max-width: 1024px)' href="/css/style_mobile.css">
+  </head>
+  <body>
+
+
+    <div class="profile">
+      <div class="onlymytho">
+        onlymytho
+      </div>
+      <div class="bio">
+        <span id='bio_typed'>
+          <script type="text/javascript">
+            var options = {
+              strings: ["", "I'm a product designer.", "I'm a product designer. or a product manager.", "I'm a creator.", "I'm a creator.<br>Enjoy!"],
+              startDelay: 10,
+              typeSpeed: 10,
+              backSpeed: 5,
+              showCursor: false,
+              onComplete: (self) => content_visible()
+            }
+
+            var typed = new Typed("#bio_typed", options);
+          </script>
+        </span>
+      </div>
+    </div>
+    <div class="content">
+
+    </div>
+    <div class="show">
+      <div class="title">
+
+      </div>
+      <div class="desc">
+
+      </div>
+      <div class="content_show">
+      </div>
+    </div>
+
+    <script type="text/javascript">
+
+      // Set content_left_margin as dynamically
+      window.onresize = resize;
+      function resize() {
+        auto_margin_left();
+        auto_margin_right();
+      }
+
+      // Call content data from data.json and execute functions about content_item
+      var data;
+      readTextFile("./data.json", function(text){
+          data = JSON.parse(text).data;
+          console.log(data);
+
+          // Call functions related to content data
+          segment_content_item();
+          auto_margin_left();
+          auto_margin_right();
+          apply_content_show_transition();
+      });
+    </script>
+  </body>
+</html>
