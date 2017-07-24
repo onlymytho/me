@@ -52,8 +52,8 @@
         "image_urls": [
           "./assets/yeonnam1.jpeg",
           "./assets/yeonnam5.gif",
-          "./assets/yeonnam2.jpg",
-          "./assets/yeonnam3.jpg",
+          "./assets/yeonnam2.JPG",
+          "./assets/yeonnam3.JPG",
           "./assets/yeonnam4.gif"
         ],
         "tags": [
@@ -74,12 +74,12 @@
         "thumbnail_url": "./assets/design_sprint.jpg",
         "image_urls": [
           "./assets/design_sprint1.jpg",
-          "./assets/design_sprint2.jpg",
+          "./assets/design_sprint2.JPG",
           "./assets/design_sprint3.jpg",
           "./assets/design_sprint4.jpg",
-          "./assets/design_sprint5.jpg",
-          "./assets/design_sprint6.jpg",
-          "./assets/design_sprint7.jpg"
+          "./assets/design_sprint5.JPG",
+          "./assets/design_sprint6.JPG",
+          "./assets/design_sprint7.JPG"
         ],
         "tags": [
           "planning",
