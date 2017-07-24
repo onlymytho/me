@@ -6,6 +6,7 @@
     <script src="./js/dragscroll.js"></script>
     <script src="./js/typed.js"></script>
     <script src="./js/content_functions.js"></script>
+    <script src="./js/content_functions_mobile.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" media='screen and (min-width: 1024px)' href="./css/style.css">
     <link rel="stylesheet" media='screen and (max-width: 1024px)' href="./css/style_mobile.css">
@@ -55,6 +56,16 @@
       function resize() {
         auto_margin_left();
         auto_margin_right();
+        // Mobile functions
+        if ( window.screen.width < 1024 ) {
+          // Mobile
+          console.log(window.screen.width);
+          // auto_content_item()
+        }
+        else {
+          // PC
+          console.log(window.screen.width);
+        }
       }
 
       // Call content data from data.json and execute functions about content_item
@@ -68,6 +79,17 @@
           auto_margin_left();
           auto_margin_right();
           apply_content_show_transition();
+
+          // Mobile functions
+          if ( window.screen.width < 1024 ) {
+            // Mobile
+            console.log(window.screen.width);
+            // auto_content_item()
+          }
+          else {
+            // PC
+            console.log(window.screen.width);
+          }
       });
     </script>
   </body>
