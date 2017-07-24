@@ -94,6 +94,7 @@ body {
   background: -o-linear-gradient(right,rgba(255,255,255,0),rgba(255,255,255,1)); /*Opera 11.1-12*/
   background: -moz-linear-gradient(right,rgba(255,255,255,0),rgba(255,255,255,1)); /*Fx 3.6-15*/
   background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)); /*Standard*/
+  pointer-events: none;
 }
 .content .content_carousel .content_item {
   width: calc((100% - 56px)/2 - 7px);
