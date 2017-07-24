@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .switch_text {
+        display: inline-block;
+        width: 300px;
+        font-size: 16px;
+        font-family: sans-serif;
+        color: #869196;
+        vertical-align: middle;
+        line-height: 24px;
+        margin-top:100px;
+        margin-left:100px;
+        -webkit-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -moz-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -ms-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -o-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      .switch {
+        display: inline-block;
+        margin-top:100px;
+        width: 60px;
+        height: 30px;
+        background-color: #f7f8f9;
+        border: 1px solid #ccd4d9;
+        border-radius: 50px;
+        cursor: pointer;
+        -webkit-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -moz-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -ms-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -o-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition-delay: 0.05s;
+        vertical-align: middle;
+      }
+      .ball {
+        width: 26px;
+        height: 26px;
+        margin: 1px;
+        background-color: #fff;
+        box-shadow: #CCD4D9 0 2px 5px;
+        border: 1px solid #f0f3f5;
+        border-radius: 50px;
+        cursor: pointer;
+        -webkit-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -moz-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -ms-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        -o-transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="switch_text">
+      Turn ON when underdog is ready.
+    </div>
+    <div class="switch">
+      <div class="ball">
+
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      document.getElementsByClassName("switch")[0].onclick = function() {
+        if (document.getElementsByClassName("ball")[0].style.marginLeft > '1px') {
+          document.getElementsByClassName("ball")[0].style.marginLeft = '1px';
+          document.getElementsByClassName("switch")[0].style.backgroundColor = '#f7f8f9';
+          document.getElementsByClassName("switch_text")[0].innerText = 'Turn on when underdog is ready.'
+          document.getElementsByClassName("switch_text")[0].style.color = '#869196'
+        }
+        else {
+          document.getElementsByClassName("ball")[0].style.marginLeft = window.getComputedStyle(document.getElementsByClassName("switch")[0]).getPropertyValue("width").split('px')[0] - window.getComputedStyle(document.getElementsByClassName("ball")[0]).getPropertyValue("width").split('px')[0] - 3 + 'px';
+          document.getElementsByClassName("switch")[0].style.backgroundColor = '#ff585b';
+          document.getElementsByClassName("switch_text")[0].innerText = "Are you sure?"
+          document.getElementsByClassName("switch_text")[0].style.color = '#ff585b'
+        }
+      }
+    </script>
+  </body>
+</html>
