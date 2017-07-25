@@ -114,6 +114,7 @@ body {
 .content .content_carousel .content_item .image {
   height: calc((100vw - 56px)/2 - 7px);
   background-color: #f7f9fa;
+  border: 1px solid #f0f3f5;
   border-radius: 8px;
   z-index:0;
   overflow: hidden;

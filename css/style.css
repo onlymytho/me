@@ -111,6 +111,7 @@ body {
   width: 100%;
   height: 236px;
   background-color: #f7f9fa;
+  border: 1px solid #f0f3f5;
   border-radius: 8px 8px 0 0;
   z-index:0;
   overflow: hidden;

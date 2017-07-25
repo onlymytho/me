@@ -12,18 +12,34 @@
         ],
         "thumbnail_url": "",
         "image_urls": [
-          "",
-          "",
-          ""
         ],
         "tags": [
           "planning",
           "project_management"
         ]
       },
+      "onlymytho_me": {
+        "created_at": "2017-07-25 10:45:00",
+        "happened_at": "2017-07-24",
+        "title": "onlymytho.me",
+        "description": "하루하루 성장하는 모습을 담는 공간. 직접 만든 두 번째 사이트.",
+        "percent": "100%",
+        "link": [
+          "https://onlymytho.github.io/me"
+        ],
+        "thumbnail_url": "./assets/me.jpg",
+        "image_urls": [
+          "./assets/me1.jpg"
+        ],
+        "tags": [
+          "planning",
+          "programming",
+          "design"
+        ]
+      },
       "before_airbnb": {
         "created_at": "2017-07-21 10:16:00",
-        "happened_at": "2017-07-01",
+        "happened_at": "2017-06-01",
         "title": "Before Airbnb",
         "description": "주변 경쟁자 분석을 통해 에어비엔비를 효과적으로 운영할 수 있도록 해주는 서비스",
         "percent": "100%",
@@ -99,9 +115,6 @@
         ],
         "thumbnail_url": "./assets/design_thinking_session.jpg",
         "image_urls": [
-          "",
-          "",
-          ""
         ],
         "tags": [
           "tutoring",
@@ -119,9 +132,6 @@
         ],
         "thumbnail_url": "./assets/dtft.jpg",
         "image_urls": [
-          "",
-          "",
-          ""
         ],
         "tags": [
           "tutoring",
