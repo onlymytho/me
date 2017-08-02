@@ -1,21 +1,24 @@
 {
   "data": {
     "content_item": {
-      "arfs": {
-        "created_at": "2017-07-23 01:57:00",
-        "happened_at": "2017-08-01",
-        "title": "Arfs",
-        "description": "(WIP) 아티스트가 만든 레이어 필터를 컨셉으로 담은 필터앱 시리즈.",
-        "percent": "33%",
+      "fanic": {
+        "created_at": "2017-08-02 13:37:00",
+        "happened_at": "2017-08-02",
+        "title": "Fanic",
+        "description": "List your favorite playlist of your star. Do Fanic!",
+        "percent": "100%",
         "link": [
-          "http://arfs.co"
+          "https://onlymytho.github.io/fanic"
         ],
-        "thumbnail_url": "",
+        "thumbnail_url": "./assets/fanic.png",
         "image_urls": [
         ],
         "tags": [
           "planning",
-          "project_management"
+          "design",
+          "programming",
+          "html/css",
+          "javascript"
         ]
       },
       "onlymytho_me": {
