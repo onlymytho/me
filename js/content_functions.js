@@ -151,21 +151,25 @@ function show_content_show(content_id) {
   document.getElementsByClassName('content_show')[0].style.opacity = '1';
   if ( window.screen.width < 1024 ) {
     // Mobile
-    console.log(window.screen.width);
     document.getElementsByTagName('body')[0].style.overflow = 'hidden';
     document.getElementsByClassName('content_show')[0].style.marginTop = '48px';
+    document.getElementsByClassName('content_show')[0].style.pointerEvents = 'none'
   }
   else {
     // PC
-    console.log(window.screen.width);
     document.getElementsByClassName('content_show')[0].style.boxShadow = '#CCD4D9 0 10px 30px';
     document.getElementsByTagName('body')[0].style.overflow = 'hidden';
     document.getElementsByClassName('content_show')[0].style.marginTop = '84px';
+    let show_children = document.getElementsByClassName('show')[0].children;
+    for (i=0; i<show_children.length; i++) {
+      show_children[i].addEventListener("click", function(e){
+          e.stopPropagation();
+        }
+      )
+    }
+    document.getElementsByClassName('content_show')[0].style.pointerEvents = ''
+
   }
-
-
-
-
 
   var title_div = document.querySelector(".show .title");
   title_div.innerText = data.content_item[content_id].title;
