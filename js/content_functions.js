@@ -174,7 +174,7 @@ function show_content_show(content_id) {
   var title_div = document.querySelector(".show .title");
   title_div.innerText = data.content_item[content_id].title;
   var desc_div = document.querySelector(".show .desc");
-  desc_div.innerText = data.content_item[content_id].description;
+  desc_div.innerHTML = data.content_item[content_id].description + " <br>[<a target='_blank' href='" + data.content_item[content_id].link[0] + "'>링크 바로가기</a>]";
 
   // Assign content to content_show
   for (image_url in data.content_item[content_id].image_urls) {

@@ -215,6 +215,10 @@ body {
   -o-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+.show .desc a {
+  text-decoration: underline;
+  color: #bdbdbd;
+}
 .show .content_show {
   position: relative;
   width: calc(100vw - 56px);

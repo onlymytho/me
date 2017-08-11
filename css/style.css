@@ -94,7 +94,7 @@ body {
 .content .content_carousel .content_item {
   width: 314px;
   height: 502px;
-  box-shadow: #CCD4D9 0 10px 30px;
+  box-shadow: #CCD4D9 0 5px 15px;
   border: 1px solid #f7f9fa;
   border-radius: 8px;
   margin-right: 27px;
@@ -212,6 +212,10 @@ body {
   -ms-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   -o-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.show .desc a {
+  text-decoration: underline;
+  color: #bdbdbd;
 }
 .show .content_show {
   position: relative;
