@@ -1,12 +1,59 @@
 {
   "data": {
     "content_item": {
+        "naver_video": {
+          "created_at": "2017-09-25 01:09:00",
+          "happened_at": "2017-09-18",
+          "ended_at": "2017-09-23",
+          "title": "Naver Video Improvement",
+          "description": "",
+          "purpose" : "",
+          "hypothesis" : "",
+          "collaborators" :"",
+          "role": "",
+          "learned": "",
+          "link": [
+          ],
+          "thumbnail_url": "./assets/naver_video_proposal 16.jpg",
+          "image_urls": [
+              "./assets/naver_video_proposal 1.jpg",
+              "./assets/naver_video_proposal 2.jpg",
+              "./assets/naver_video_proposal 3.jpg",
+              "./assets/naver_video_proposal 4.jpg",
+              "./assets/naver_video_proposal 5.jpg",
+              "./assets/naver_video_proposal 6.jpg",
+              "./assets/naver_video_proposal 7.jpg",
+              "./assets/naver_video_proposal 8.jpg",
+              "./assets/naver_video_proposal 9.jpg",
+              "./assets/naver_video_proposal 10.jpg",
+              "./assets/naver_video_proposal 11.jpg",
+              "./assets/naver_video_proposal 12.jpg",
+              "./assets/naver_video_proposal 13.jpg",
+              "./assets/naver_video_proposal 14.jpg",
+              "./assets/naver_video_proposal 15.jpg",
+              "./assets/naver_video_proposal 16.jpg",
+              "./assets/naver_video_proposal 17.jpg",
+              "./assets/naver_video_proposal 18.jpg"
+          ],
+          "tags": [
+            "planning",
+            "design",
+            "programming",
+            "html/css",
+            "javascript"
+          ]
+        },
       "fanic": {
         "created_at": "2017-08-02 13:37:00",
-        "happened_at": "2017-08-02",
+        "happened_at": "2017-07-23",
+        "ended_at": "2017-08-02",
         "title": "Fanic",
         "description": "List your favorite playlist of your star. Do Fanic!",
-        "percent": "100%",
+        "purpose" : "- 작은 범위 안에서 다양한 조작을 요하는 음악 플레이어의 가벼운 버전 디자인\n- Javascript를 활용한 다양한 인터랙션 시도\n- ",
+        "hypothesis" : "",
+        "collaborators" :"",
+        "role": "",
+        "learned": "CSS Transition/Animation, Youtube JS API, ",
         "link": [
           "https://onlymytho.github.io/fanic"
         ],
@@ -24,9 +71,14 @@
       "onlymytho_me": {
         "created_at": "2017-07-25 10:45:00",
         "happened_at": "2017-07-24",
+        "ended_at": "2017-08-02",
         "title": "onlymytho.me",
         "description": "하루하루 성장하는 모습을 담는 공간. 직접 만든 두 번째 사이트.",
-        "percent": "100%",
+        "purpose" : "- 작은 범위 안에서 다양한 조작을 요하는 음악 플레이어의 가벼운 버전 디자인\n- Javascript를 활용한 다양한 인터랙션 시도\n- ",
+        "hypothesis" : "",
+        "collaborators" :"",
+        "role": "",
+        "learned": "CSS Transition/Animation, Youtube JS API, ",
         "link": [
           "https://onlymytho.github.io/me"
         ],
@@ -43,9 +95,14 @@
       "before_airbnb": {
         "created_at": "2017-07-21 10:16:00",
         "happened_at": "2017-06-01",
+        "ended_at": "2017-08-02",
         "title": "Before Airbnb",
         "description": "주변 경쟁자 분석을 통해 에어비엔비를 효과적으로 운영할 수 있도록 해주는 서비스",
-        "percent": "100%",
+        "purpose" : "- 작은 범위 안에서 다양한 조작을 요하는 음악 플레이어의 가벼운 버전 디자인\n- Javascript를 활용한 다양한 인터랙션 시도\n- ",
+        "hypothesis" : "",
+        "collaborators" :"",
+        "role": "",
+        "learned": "CSS Transition/Animation, Youtube JS API, ",
         "link": [
           "http://beforeairbnb.com"
         ],
@@ -62,9 +119,14 @@
       "jakupsil": {
         "created_at": "2017-07-23 00:42:00",
         "happened_at": "2017-03-01",
+        "ended_at": "2017-08-02",
         "title": "연남동 작업실",
         "description": "연남동 골목길 한 켠에 마련한 작은 작업실. 한 번 오면 반하게 되는 아늑한 매력은 때때로 '작업'에 도움이 된다.",
-        "percent": "33%",
+        "purpose" : "- 작은 범위 안에서 다양한 조작을 요하는 음악 플레이어의 가벼운 버전 디자인\n- Javascript를 활용한 다양한 인터랙션 시도\n- ",
+        "hypothesis" : "",
+        "collaborators" :"",
+        "role": "",
+        "learned": "CSS Transition/Animation, Youtube JS API, ",
         "link": [
         ],
         "thumbnail_url": "./assets/yeonnam1.jpeg",
@@ -85,9 +147,14 @@
       "design_sprint_team": {
         "created_at": "2017-07-23 01:10:00",
         "happened_at": "2016-04-01",
+        "ended_at": "2017-08-02",
         "title": "Design Sprint Team",
         "description": "빙글 팀원들과 함께 Design Sprint 방식 프로젝트를 주도적으로 진행하여 5일 만에 '문제정의-아이디어-프로토타입-테스트'의 과정을 마쳤다.",
-        "percent": "40%",
+        "purpose" : "- 작은 범위 안에서 다양한 조작을 요하는 음악 플레이어의 가벼운 버전 디자인\n- Javascript를 활용한 다양한 인터랙션 시도\n- ",
+        "hypothesis" : "",
+        "collaborators" :"",
+        "role": "",
+        "learned": "CSS Transition/Animation, Youtube JS API, ",
         "link": [
         ],
         "thumbnail_url": "./assets/design_sprint.jpg",
@@ -111,9 +178,14 @@
       "design_thinking_sessions": {
         "created_at": "2017-07-23 01:15:00",
         "happened_at": "2016-04-01",
+        "ended_at": "2017-08-02",
         "title": "Design Thinknig Sessions",
         "description": "빙글 팀원들에게 디자인 사고에 대해 강의하고 여러 실습을 포함한 원데이 워크샵을 2회 진행했다. 대학생을 넘어 실무자를 대상으로 한 첫 DT 강의.",
-        "percent": "100%",
+        "purpose" : "- 작은 범위 안에서 다양한 조작을 요하는 음악 플레이어의 가벼운 버전 디자인\n- Javascript를 활용한 다양한 인터랙션 시도\n- ",
+        "hypothesis" : "",
+        "collaborators" :"",
+        "role": "",
+        "learned": "CSS Transition/Animation, Youtube JS API, ",
         "link": [
         ],
         "thumbnail_url": "./assets/design_thinking_session.jpg",
@@ -127,9 +199,14 @@
       "design_thinking_ft_school": {
         "created_at": "2017-07-23 01:15:00",
         "happened_at": "2016-01-01",
+        "ended_at": "2017-08-02",
         "title": "Design Thinking FT Schl.",
         "description": "디자인 사고 중심 프로젝트를 진행하는데 필요한 여러 도구와 프로젝트 진행 방식을 가이드하는 퍼실리테이터로서의 역량을 익혔다. 언제나 느끼지만 DT 스킬은 어디서나 유용하다.",
-        "percent": "33%",
+        "purpose" : "- 작은 범위 안에서 다양한 조작을 요하는 음악 플레이어의 가벼운 버전 디자인\n- Javascript를 활용한 다양한 인터랙션 시도\n- ",
+        "hypothesis" : "",
+        "collaborators" :"",
+        "role": "",
+        "learned": "CSS Transition/Animation, Youtube JS API, ",
         "link": [
           "http://www.slideshare.net/onlymytho/dtft-160228"
         ],

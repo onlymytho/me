@@ -70,7 +70,7 @@ function create_content_yearbox(year) {
   content_carousel_div.appendChild(content_curtain_div);
 }
 
-function create_content_item(content_id, parent_location, thumbnail_url, title, desc, happened_at, percent) {
+function create_content_item(content_id, parent_location, thumbnail_url, title, desc, happened_at, ended_at) {
   // create content_item
   var content_item_div = document.createElement("div");
   content_item_div.className = 'content_item';
@@ -104,10 +104,14 @@ function create_content_item(content_id, parent_location, thumbnail_url, title, 
   start_div.className = 'start';
   start_div.innerText = happened_at.substr(0, 4) + '.' + happened_at.substr(5, 2);
   footer_div.appendChild(start_div);
-  var percent_div = document.createElement("div");
-  percent_div.className = 'percent';
-  percent_div.innerText = percent;
-  footer_div.appendChild(percent_div);
+  var end_div = document.createElement("div");
+  end_div.className = 'percent';
+  end_div.innerText = ended_at.substr(0, 4) + '.' + ended_at.substr(5, 2);
+  footer_div.appendChild(end_div);
+  // var percent_div = document.createElement("div");
+  // percent_div.className = 'percent';
+  // percent_div.innerText = percent;
+  // footer_div.appendChild(percent_div);
 }
 
 function segment_content_item() {
@@ -126,7 +130,7 @@ function segment_content_item() {
       item.title,
       item.description,
       item.happened_at,
-      item.percent
+      item.ended_at
     );
   }
 };
